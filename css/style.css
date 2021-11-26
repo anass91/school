@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: auto;
+    background-color: beige;
+}
+.menu{
+    display: none;
+}
+.container{
+    position: relative;
+    width: 65%;
+    background-color: #fff;
+    margin: 2rem auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.603);
+}
+.header{
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    flex: 0 0 47%;
+    
+}
+.list{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+.content{
+    position: relative;
+    padding: 2rem 3rem;
+    display: flex;
+}
+
+.text{
+    
+    padding: 3.4rem 1.6rem;
+    flex: 1;
+}
+.footer{
+    padding: 4rem 7rem;
+    background-color: turquoise;
+}
+    
+
+
+.para{
+    display: flex;
+}
+.left{
+    flex: 0 0 17%;
+    border-top: 2px solid #fff;
+}
+
+
+/*-----------------------------------------------------------*/
+
+.container{
+    position: relative;
+}
+.anass{
+    display: none;
+    background-image: linear-gradient(to right bottom, rgba(255, 166, 0, 0.521) ,rgba(0, 255, 255, 0.521));
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
+   
+
+}
+.menu-nav{
+    margin: 4rem auto;
+    height: 20rem;
+    width: 80%;
+    padding: 2rem;
+}
+.menu-nav ul{
+   list-style: none;
+   text-align: center;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.menu-nav ul li{
+    transition: all .5s cubic-bezier(0.47, 0, 0.745, 0.715);
+    padding: .8rem 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.menu-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-nav ul li:not(:last-child){
+    margin-bottom: .2rem;
+}
+
+.close{
+    position: absolute;
+    right: 1.1rem;
+    top: 0;
+    font-size: 2.7rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.close:hover{
+    color: yellow;
+    transform: scale(1.23);
+}
+
+.menu-nav ul li:hover{
+    background-color: #fff;
+}
+.menu-nav ul li:hover a{
+    color:grey;
+}
